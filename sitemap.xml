@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tradewisehq.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tradewisehq.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tradewisehq.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tradewisehq.com/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tradewisehq.com/acceptable-use</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tradewisehq.com/data-processing</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tradewisehq.com/ai-disclaimer</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

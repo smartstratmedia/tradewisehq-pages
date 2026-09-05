@@ -1,0 +1,18 @@
+# TradeWise
+
+> All-in-one AI operating system for tradesmen — from leads and quoting to scheduling, invoicing, and aftercare. Built for trades, not generic SaaS.
+
+TradeWise is a UK-built platform that helps electricians, plumbers, builders, and other trades run their business end-to-end. It combines a CRM, job management, quoting and invoicing, workforce scheduling, a client portal, a material broker, and a marketing suite (website builder, lead reactivation, automations) into one workspace, powered by an AI assistant called TradePal.
+
+## Pages
+
+- [Home](/): Product overview, features, and pricing for the TradeWise platform.
+
+## Optional
+
+- [Privacy Policy](/privacy): How TradeWise collects, stores, and processes data.
+- [Terms of Service](/terms): Legal terms for using the TradeWise platform.
+- [Cookie Policy](/cookies): How cookies and local storage are used.
+- [Acceptable Use](/acceptable-use): Rules for using the platform.
+- [Data Processing](/data-processing): Data processing addendum for business customers.
+- [AI Disclaimer](/ai-disclaimer): Limitations and disclaimers for AI-generated output.
