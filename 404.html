@@ -21,6 +21,24 @@
           return Promise.all(keys.map(function (key) { return caches.delete(key); }));
         }).catch(function () {});
       }
+      // Safari can restore an already-open SPA from its page cache. Revalidate
+      // the hashed entry whenever that page becomes active.
+      window.addEventListener("pageshow", function () {
+        window.setTimeout(function () {
+          var loaded = document.querySelector('script[type="module"][src]');
+          if (!loaded) return;
+          fetch('/?tw-bootstrap=' + Date.now(), {
+            cache: 'no-store',
+            headers: { 'Cache-Control': 'no-cache' }
+          }).then(function (response) { return response.text(); }).then(function (html) {
+            var match = html.match(/<script[^>]+type=["']module["'][^>]+src=["']([^"']+)/i);
+            if (!match || new URL(match[1], location.origin).pathname === new URL(loaded.src, location.origin).pathname) return;
+            var next = new URL(location.href);
+            next.searchParams.set('tw-release', String(Date.now()));
+            location.replace(next.toString());
+          }).catch(function () {});
+        }, 250);
+      });
     </script>
     <title>Tradewise AI — Trade Management Software</title>
     <meta name="description" content="All-in-one AI operating system for tradesmen. From leads to invoicing, scheduling to aftercare. Built for trades, not generic SaaS." />
@@ -57,10 +75,10 @@
     <meta name="twitter:description" content="Track progress, view quotes, invoices, payments and updates." />
     <meta name="twitter:image" content="https://tradewisehq.com/og-tradewise-workspace.jpg?v=3" />
     
-    <script type="module" crossorigin src="/assets/index-CHja7nLJ.js"></script>
+    <script type="module" crossorigin src="/assets/index-D8Oi_JaU.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-capacitor-BRnrsFIE.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-DbCnv6oO.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-DqaC7X5f.css">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-Ban9GwA-.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BeZa9AsK.css">
   </head>
 
   <body>
